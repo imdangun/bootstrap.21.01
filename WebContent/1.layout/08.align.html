@@ -1,7 +1,7 @@
-<title>vertical align</title>
+<title>align</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
 <style>
 span {
 	font-size: 2rem;
@@ -18,23 +18,26 @@ td {
 }
 </style>
 <div class='container'>
-	<span class='align-baseline'>baseline</span>
-	<span class='align-top'>top</span>
-	<span class='align-middle'>middle</span>
-	<span class='align-bottom'>bottom</span>
-	<span class='align-text-top'>text-top</span>
-	<span class='align-text-bottom'>text-bottom</span>
+	<div class='row'>
+		<div class='col'>
+			<span class='align-baseline'>baseline</span>
+			<span class='align-top'>top</span>
+			<span class='align-middle'>middle</span>
+			<span class='align-bottom'>bottom</span>
+			<span class='align-text-top'>text-top</span>
+			<span class='align-text-bottom'>text-bottom</span>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col'>
+			<table>
+				<tr>
+					<td class='align-baseline'>baseline</td>
+					<td class='align-top'>top</td>
+					<td class='align-middle'>middle</td>
+					<td class='align-bottom'>bottom</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </div>
-
-<table>
-	<tr>
-		<td class='align-baseline'>baseline</td>
-		<td class='align-top'>top</td>
-		<td class='align-middle'>middle</td>
-		<td class='align-bottom'>bottom</td>		
-	</tr>
-</table>
-<!-- 
-Use the align- classes to change the alignment of elements 
-(only works on inline, inline-block, inline-table and table cell elements):
- -->
