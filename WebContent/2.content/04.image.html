@@ -1,21 +1,25 @@
 <title>image</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
 <style>
-div :not(.container) {
+div :not(.container, .row, .col) {
 	width: 10em;
 	height: 10em;
 }
 </style>
 <div class='container'>
-	<div><img src='../img/flower.jpg' class='img-fluid rounded'/></div>
-	<div><img src='../img/flower.jpg' class='img-fluid img-thumbnail'/></div>
-	
-	<figure class='figure'>
-		<img src='../img/flower.jpg' class='figure-img img-fluid rounded'/>
-		<figcaption class='figure-caption text-right'>란타나</figcaption>	
-	</figure>
-	
-	<div><img src='http://placehold.it/200x200'/></div>
+	<div class='row'>
+		<div class='col'>
+			<div><img src='../img/flower.jpg' class='img-fluid rounded'/></div>
+			<div><img src='../img/flower.jpg' class='img-fluid img-thumbnail'/></div>
+				
+			<figure class='figure'>
+				<img src='../img/flower.jpg' class='figure-img img-fluid rounded'/>
+				<figcaption class='figure-caption text-right'>란타나</figcaption>
+			</figure>
+			
+			<div><img src='http://placehold.it/200x200'/></div>
+		</div>
+	</div>
 </div>

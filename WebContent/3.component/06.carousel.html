@@ -1,117 +1,138 @@
 <title>carousel</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='http://code.jquery.com/jquery-3.5.1.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<link rel='stylesheet' href='http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+
 <div class='container'>
-	<div class='carousel slide' data-ride='carousel'>
-		<div class='carousel-inner'>
-			<div class='carousel-item'>
-				<img src='../img/cloud1.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item active'>
-				<img src='../img/cloud2.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud3.gif' class='w-100'/>
-			</div>
-		</div>
-	</div>
-	
-	<div class='carousel slide carousel-fade' data-ride='carousel' data-interval='1000'>
-		<div class='carousel-inner'>
-			<div class='carousel-item'>
-				<img src='../img/cloud1.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item active'>
-				<img src='../img/cloud2.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud3.gif' class='w-100'/>
-			</div>
-		</div>
-	</div>
-	
-	<div id='carousel1' class='carousel slide carousel-fade' data-ride='carousel'>
-		<div class='carousel-inner'>
-			<div class='carousel-item'>
-				<img src='../img/cloud1.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item active'>
-				<img src='../img/cloud2.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud3.gif' class='w-100'/>
-			</div>
-		</div>
-		<a href='#carousel1' class='carousel-control-prev' data-slide='prev'>
-			<span class='carousel-control-prev-icon'></span>
-		</a>
-		<a href='#carousel1' class='carousel-control-next' data-slide='next'>
-			<span class='carousel-control-next-icon'></span>
-		</a>
-	</div>
-	
-	<div id='carousel2' class='carousel slide' data-ride='carousel'>
-		<ol class='carousel-indicators'>
-			<li data-target='#carousel2' data-slide-to='0' class='active'></li>
-			<li data-target='#carousel2' data-slide-to='1'></li>
-			<li data-target='#carousel2' data-slide-to='2'></li>
-		</ol>
-		<div class='carousel-inner'>
-			<div class='carousel-item active'>
-				<img src='../img/cloud1.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud2.gif' class='w-100'/>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud3.gif' class='w-100'/>
-			</div>
-		</div>
-		<a href='#carousel2' class='carousel-control-prev' data-slide='prev'>
-			<span class='carousel-control-prev-icon'></span>
-		</a>
-		<a href='#carousel2' class='carousel-control-next' data-slide='next'>
-			<span class='carousel-control-next-icon'></span>
-		</a>
-	</div>
-	
-	<div id='carousel3' class='carousel slide' data-ride='carousel' data-interval='1000'>
-		<ol class='carousel-indicators'>
-			<li data-target='#carousel3' data-slide-to='0' class='active'></li>
-			<li data-target='#carousel3' data-slide-to='1'></li>
-			<li data-target='#carousel3' data-slide-to='2'></li>
-		</ol>
-		<div class='carousel-inner'>
-			<div class='carousel-item active'>
-				<img src='../img/cloud1.gif' class='w-100'/>
-				<div class='carousel-caption text-dark'>
-					<h5>무지개</h5>
-					<p>무지개는 희망을 부른다.</p>
-				</div>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud2.gif' class='w-100'/>
-				<div class='carousel-caption text-dark'>
-					<h5>사랑</h5>
-					<p>하늘에서 사랑이 내린다.</p>
-				</div>
-			</div>
-			<div class='carousel-item'>
-				<img src='../img/cloud3.gif' class='w-100'/>
-				<div class='carousel-caption text-dark'>
-					<h5>빛</h5>
-					<p>하늘과 땅을 빛으로 잇는다.</p>
+	<div class='row'>
+		<div class='col'>
+			<div class='carousel slide' data-ride='carousel'>
+				<div class='carousel-inner'>
+					<div class='carousel-item'>
+						<img src='../img/cloud1.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item active'>
+						<img src='../img/cloud2.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud3.gif' class='w-100'/>
+					</div>
 				</div>
 			</div>
 		</div>
-		<a href='#carousel3' class='carousel-control-prev' data-slide='prev'>
-			<span class='carousel-control-prev-icon'></span>
-		</a>
-		<a href='#carousel3' class='carousel-control-next' data-slide='next'>
-			<span class='carousel-control-next-icon'></span>
-		</a>
+	</div>
+
+	<div class='row'>
+		<div class='col'>
+			<div class='carousel slide carousel-fade' data-ride='carousel' data-interval='1000'>
+				<div class='carousel-inner'>
+					<div class='carousel-item'>
+						<img src='../img/cloud1.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item active'>
+						<img src='../img/cloud2.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud3.gif' class='w-100'/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='col'>
+			<div id='carousel1' class='carousel slide' data-ride='carousel'>
+				<div class='carousel-inner'>
+					<div class='carousel-item'>
+						<img src='../img/cloud1.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item active'>
+						<img src='../img/cloud2.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud3.gif' class='w-100'/>
+					</div>
+				</div>
+				<a href='#carousel1' class='carousel-control-prev' data-slide='prev'>
+					<span class='carousel-control-prev-icon'></span>
+				</a>
+				<a href='#carousel1' class='carousel-control-next' data-slide='next'>
+					<span class='carousel-control-next-icon'></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='col'>
+			<div id='carousel2' class='carousel slide' data-ride='carousel'>
+				<ol class='carousel-indicators'>
+					<li data-target='#carousel2' data-slide-to='0' class='active'></li>
+					<li data-target='#carousel2' data-slide-to='1'></li>
+					<li data-target='#carousel2' data-slide-to='2'></li>
+				</ol>
+				<div class='carousel-inner'>
+					<div class='carousel-item active'>
+						<img src='../img/cloud1.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud2.gif' class='w-100'/>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud3.gif' class='w-100'/>
+					</div>
+				</div>
+				<a href='#carousel2' class='carousel-control-prev' data-slide='prev'>
+					<span class='carousel-control-prev-icon'></span>
+				</a>
+				<a href='#carousel2' class='carousel-control-next' data-slide='next'>
+					<span class='carousel-control-next-icon'></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='col'>
+			<div id='carousel3' class='carousel slide' data-ride='carousel'>
+				<ol class='carousel-indicators'>
+					<li data-target='#carousel3' data-slide-to='0' class='active'></li>
+					<li data-target='#carousel3' data-slide-to='1'></li>
+					<li data-target='#carousel3' data-slide-to='2'></li>
+				</ol>
+				<div class='carousel-inner'>
+					<div class='carousel-item active'>
+						<img src='../img/cloud1.gif' class='w-100'/>
+						<div class='carousel-caption text-dark'>
+							<h5>무지개</h5>
+							<p>무지개는 희망을 부른다.</p>
+						</div>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud2.gif' class='w-100'/>
+						<div class='carousel-caption text-dark'>
+							<h5>사랑</h5>
+							<p>하늘에서 사랑이 내린다.</p>
+						</div>
+					</div>
+					<div class='carousel-item'>
+						<img src='../img/cloud3.gif' class='w-100'/>
+						<div class='carousel-caption text-dark'>
+							<h5>빛</h5>
+							<p>하늘과 땅을 빛으로 잇는다.</p>
+						</div>
+					</div>
+				</div>
+				<a href='#carousel3' class='carousel-control-prev' data-slide='prev'>
+					<span class='carousel-control-prev-icon'></span>
+				</a>
+				<a href='#carousel3' class='carousel-control-next' data-slide='next'>
+					<span class='carousel-control-next-icon'></span>
+				</a>
+			</div>
+		</div>
 	</div>
 </div>
